@@ -1,0 +1,234 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar{
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 50px var(--grey-300);
+    z-index: 1;
+    min-height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding-bottom: 1.5rem;
+}
+
+.student-pic{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2.5px solid var(--clr-green);
+    background-color: #ffffff00;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.student-name{
+    font-size: 1.25rem;
+}
+
+.main{
+    height: 100%;
+    padding-left: 300px;
+}
+
+.student-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+.student-detail{
+    border-radius: 8px;
+    font-size: 14px;
+    width: 90%;
+    padding: 0.75rem;
+    transition: all 0.35s ease;
+}
+
+.student-detail:hover, #active{
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+}
+
+.dashLogOut{
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-red);
+    padding: 0.75rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.main-footer p{
+    font-size: 14px;
+}
+
+.answer label{
+    font-size: 20px;
+}
+
+nav{
+    background-color: var(--clr-green);
+}
+
+.dashboard-nav{
+    width: 90%;
+}
+
+.nav-logo{
+    padding: 1rem;
+}
+
+.nav-logo .logo{
+    height: 2rem;
+}
+
+.nav-student-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2.5px solid var(--clr-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-student-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+a.nav-link{
+    color: white;
+}
+
+a.nav-link:hover{
+    color: rgb(255, 177, 177);
+}
+
+.navBtn{
+    background-color: white;
+    color: var(--clr-green);
+}
+
+.options-icon{
+    color: var(--clr-white);
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+
+/* ========== Quick Accesses ========== */
+
+#quickAccesses{
+    height: 100%;
+}
+
+.widthMaintainer{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.access-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    height: max-content;
+}
+
+li.access-card{
+    /* cursor: pointer; */
+    min-height: 300px;
+    padding: 1rem;
+    border-radius: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 20px rgba(167, 167, 167, 0.596);
+}
+
+li.access-card:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+li.access-card:nth-child(1){
+    background-color: rgb(215, 250, 248);
+}
+
+li.access-card:nth-child(2){
+    background-color: rgb(248, 250, 215);
+}
+
+li.access-card:nth-child(3){
+    background-color: rgb(215, 223, 250);
+}
+
+li.access-card:nth-child(4){
+    background-color: rgb(250, 215, 235);
+}
+
+li.access-card:nth-child(5){
+    background-color: rgb(250, 215, 215);
+}
+
+li.access-card:nth-child(6){
+    background-color: rgb(226, 255, 217);
+}
+
+.access-header{
+    font-size: 1.5rem;
+}
+
+.access-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 5px 3px 40px rgba(129, 129, 129, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid var(--grey-700); */
+}
+
+.access-icon img{
+    width: 50px;
+    height: 50px;
+}
+
+.accessBtn{
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--grey-700);
+}
